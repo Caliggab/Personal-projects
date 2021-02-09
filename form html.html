@@ -1,0 +1,168 @@
+<!DOCTYPE = html>
+<html>
+<style>
+    .main{ 
+        background-color: black;
+    }
+
+    .surveysheet{
+        display: block;
+        padding: 25px;
+        background-color:rgba(29, 30, 51, 0.582);
+        width: 85%;
+        margin: 10px auto 10px auto;
+    }
+
+    .surveyelement{
+        margin: 5px 0 10px 0;
+        width: 98.5%;
+        height: 25px;
+        font-size: 20px;
+
+    }
+    .surveyelement2{
+   
+    }
+
+    .title{
+        color: honeydew;
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .sub{
+        color: honeydew;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .infocamp{
+        display:box;
+        color: honeydew;
+        padding-bottom: 100px;
+        font-size: 24px;
+    }
+
+    .button{
+        padding: 25px;
+        background-color:rgba(23, 250, 99, 0.582);
+        width: 90%;
+        margin: 30px auto 70px auto;
+        display: block;
+        color: rgb(168, 238, 238);
+        font-size: 24px;
+
+    }
+
+    .dropdown{
+        position: relative;
+        margin: 15px 0 15px 0;
+        text-align: center;
+        width: 96%;
+        height: 35px;
+        font-size: 20px;
+    }
+    .dropdown select{
+      
+    }
+    .dropdownd{
+        position: relative;
+    } 
+    .textarea1{ 
+        width: 98%;
+        height: 130px;
+        margin: 15px 0 5px 0;
+        font-size: 20px;
+    }
+
+    
+</style> 
+<head>
+
+</head>
+<!--  body, every object a div-->
+<body class="main">
+    <!-- Title and subtitle-->
+    <h1 id ="title" class="title">
+        <p>Jazz Survey Form</p>
+    </h1>
+    <h2 >
+        <p class="sub" id = "description">Let us know about your tastes and we will recommend you more cool stuff!</p>
+    </h2>
+    <br>
+
+    <!-- Everything inside a box that is centered and has a different color-->
+    <form class="surveysheet" id="survey-form" >
+        <fieldset>
+        <legend style="color: navajowhite; font-size: 16px;">Your personal info</legend>
+        <!--Name-->
+        <label id = "name-label" class="infocamp"> Name </label><br>
+        <input id = "name" type="text" class="surveyelement" placeholder="Enter your name" required></input><br>
+        <!--email-->
+        <label id = "email-label" class="infocamp">Email</label><br>
+        <input id = "email"type="email" class="surveyelement" placeholder="Enter your email" required></input><br>
+         <!--Age-->
+        <label id = "number-label" class="infocamp"> Age</label><br>
+        <input id ="number" type="number" class="surveyelement" style="margin-bottom: 15px;" min="10" max="100" placeholder="Enter your Age"></input><br>
+        </fieldset>
+        <br>
+        <br>
+        <!--whats your position-->
+        <label class="infocamp"> What's your current ocupation? </label>
+        <div>
+        <select id = "dropdown" class="dropdown">
+            <option value="" hidden selected;"> Your ocupation</option>
+            <option value="Jazz Teacher">Jazz Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Enthusiast Listener">Enthusiast Listener</option>
+            <option value="Others">Others</option>
+        </select>
+        </div>
+        <br>
+        <!--Would you recommend? (stereo)-->
+        <label class="infocamp"> Would you recommend free jazz to your pals? </label><br>
+        <div style= "margin: 10px auto 20px 15px">
+        <input type="radio" class="surveyelement2" value="definately" name="rec"></input>
+        <label class="infocamp"> Definately </label><br>
+        <input type="radio" class="surveyelement2"value="maybe" name="rec"></input>
+        <label class="infocamp"> Maybe </label><br>
+        <input type="radio" class="surveyelement2" value="nope" name="rec"></input>
+        <label class="infocamp"> They would never talk to me again </label><br>
+        </div>
+        <br>
+        <!--Favorite player-->
+        <label class="infocamp"> What's your favorite jazz dude/dudette? </label><br>
+        <select id = "dropdown" class="dropdown">
+            <option value="" hidden selected;"> Your favorite artist</option>
+            <option value="Bill Evans">Bill Evans</option>
+            <option value="Keith Jarrett">Keith Jarrett</option>
+            <option value="Gary Peacock">Gary Peacock</option>
+            <option value="Jan Garbarek">Jan Garbarek</option>
+        </select><br>
+        <br>
+        <!--Recommendations for improvements (checkbox) check all that apply-->
+        <label class="infocamp"> Help us improve! What do you think our site needs? </label><br>
+        <div style= "margin: 10px auto 20px 15px">
+        <input type ="checkbox" class="surveyelement2" value="Blog"></input>
+        <label class="infocamp"> More blog posts</label><br>
+        <input type ="checkbox" class="surveyelement2" value="Music"></input>
+        <label class="infocamp"> More free music</label><br>
+        <input type ="checkbox" class="surveyelement2" value="Theory"></input>
+        <label class="infocamp"> Music analysis and theory please!</label><br>
+        <input type ="checkbox" class="surveyelement2" value="Improv"></input>
+        <label class="infocamp"> Improv tips and exercises</label><br>
+        <input type ="checkbox" class="surveyelement2" value="Jarrett"></input>
+        <label class="infocamp"> More pics of Keith Jarrett</label><br>
+        </div>
+        <br>
+        <!--Free comment box-->
+        <label class="infocamp"> Please leave any other long-winded remarks below: </label><br>
+        <textarea class="textarea1" placeholder="Leave your comments" style="font-family:Verdana, Geneva, Tahoma, sans-serif"></textarea>
+       <!--Submit button-->
+     <input id ="submit" type="submit" class="button"></input>
+    </form>
+
+     
+</body>
+
+</html>
