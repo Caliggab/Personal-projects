@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  background-color:rgb(70, 55, 42);
+  color: bisque;
+  margin:0;
+  overflow-x: hidden;
+}
+ul{
+  background-color:rgb(253, 186, 179) ;
+  position:fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 100%;
+  margin:0;
+  padding:0;
+  height: 4em;
+  }
+
+li{
+  float:right;  
+  max-width: 8em;
+}
+
+li a{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1em;
+  display: block;
+  text-decoration: none;
+  color:rgb(70, 55, 42);
+  padding: 22px 20px;
+  text-align: center;
+  border-left: 1px rgb(34, 16, 16) solid;
+  height: 4em;
+
+}
+
+li a:hover{
+  background-color: rgb(168, 74, 74);
+}
+
+li a:active{
+  background-color: rgb(34, 16, 16);
+  color:rgb(184, 67, 184);
+}
+
+h1{
+  margin-top: 5em;
+  text-align: center;
+  font-size: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.flex{
+  display:flex;
+  width:70%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.flex img{
+  align-self: center;
+  width:4em;
+  height: 4em;
+  padding:2em;
+  }
+
+.card{
+  max-height: 200px;
+  margin-bottom: 4em;
+  padding:15px;
+  background-color: rgb(39, 15, 15);
+  color:blanchedalmond;
+  display: flex;
+}
+
+.card h2 p input{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.littlebox-right{
+  width: 80%;
+  padding:10px;
+}
+
+@media screen and (max-width:600px) {
+  .card{
+    max-height: 500px;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }  
+  
+  .littlebox-right{
+  width: 100%;
+  padding:0px;
+}
+}
+
+.flex-price{
+  display: flex;
+  width:70%;
+  margin:auto;
+  margin-bottom: 6em;
+}
+
+.card2{
+  border-radius: 10px;
+  border:rgb(48, 0, 48) solid 1px;
+  display: flex;
+  flex-direction: column;
+  margin:1em;
+  background-clip: padding-box;
+
+}
+
+.card2 h2{
+  padding: 1em;
+  background-color: rgb(61, 13, 8);
+  margin: 0.5em 0;
+  min-height: 2.5em;
+  text-align: center;
+}
+
+.card2 p{
+  padding: 1em;
+  text-align: center;
+}
+
+.card2 input{
+  padding: 1em;
+  margin: 0.5em 0;
+  border:none;
+  background-color: rgb(63, 117, 1);
+  color: bisque;
+  font-size:1em;
+}
+
+/*footer*/
+
+.footer{
+  display: block;
+  background-color: burlywood;
+  width: 100%;
+  position:relative;
+  bottom: 0;
+  left: 0;
+  margin:0;
+  color:darkslategrey;
+  }
+
+span a{
+  padding: 2em;
+  text-decoration: none;
+  background-color: burlywood ;
+  float:right;
+  border-left: rgb(87, 2, 19) 1px solid;
+  width:auto;
+}
+
+.footer p{
+  padding: 2em;
+  margin:0;
+}
+span a:hover{
+  background-color: rgb(2, 38, 92) ;
+
+}
+
+#header{
+  position:fixed;
+}
+
+#header-img{
+  max-width: 40%;
+  height: 3.5em;
+  padding:5px;
+}
+
+#form{
+  width:100%;
+  margin-bottom: 10em;
+}
+
+#email{
+  margin:0 auto;
+  padding:10px 20px;
+  display: block;
+  width:35%;
+}
+
+#submit{
+  margin:1em auto;
+  padding:5px 10px;
+  display: block;
+  width:25%;
+}
+
+#video{
+  display: block;
+  margin: 6em auto;
+}
+
+</style>
+</head>
+<body>
+  <header id = "header">
+  <nav id="nav-bar">
+    <ul>
+        <img id="header-img" src="logobos.png" alt="logo">
+        <li><a class="nav-link" href="#form">Our features</a></li>
+        <li><a class="nav-link" href="#video">In action</a></li>
+        <li><a class="nav-link" href="#flex-price">Pricing list</a></li>
+    </ul>
+  </nav>
+</header>
+  <div>
+    <h1>Create, inspire, start your musical journey</h1>
+    <form id="form">
+        <input name="email" id= "email" type="email" placeholder="Enter your email">
+        <input id= "submit" type="submit" value="Get personalized advice" action="https://www.freecodecamp.com/email-submit" formtarget="https://www.freecodecamp.com/email-submit">
+    </form>
+  </div>
+
+       <!--flex stuff-->
+    <div class="flex">
+      <div class="card">
+          <img  src="../Basic HTML and CSS/circle.png" alt="">
+          <div class ="littlebox-right">
+          <h2>A long history of making world renowned pianos</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          </div>
+      </div>
+      <div class="card">
+          <img  src="../Basic HTML and CSS/circle.png" alt="">
+          <div class ="littlebox-right">
+          <h2>A refined craft</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          </div>
+      </div>
+      <div class="card">
+          <img  src="../Basic HTML and CSS/circle.png" alt="">
+          <div class ="littlebox-right">
+          <h2>A Bosendorfer grand last for a lifetime</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          </div>
+      </div>
+    </div>
+
+     <!--video youtube-->
+     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/d0wDKOJeIVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--opciones de compra, 3, usar flexbox-->
+    <div class="flex-price" id="flex-price">
+      <div class="card2">
+          <h2>214 VC <br> The Modest</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          <input type="submit" value="More info">
+      </div>
+      <div class="card2">
+          <h2>280 VC <br>  The Grand</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          <input type="submit" value="More info">
+      </div>
+      <div class="card2">
+          <h2>290 Imperial <br>  The King</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laudantium sunt harum repudiandae ratione excepturi optio odit expedita nihil </p>
+          <input type="submit" value="More info">
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div >
+          <span><a href="" class="footer-lnk">Hire a piano tuner!</a></span>
+          <span><a href="" class="footer-lnk">Buy strings!</a></span>
+          <span><a href="" class="footer-lnk">About</a></span>
+        </div>
+        <p> Copyright 2021, Bosendorfer</p>
+    </div>
+  </footer>
+
+    
+    </body>
+</html>
