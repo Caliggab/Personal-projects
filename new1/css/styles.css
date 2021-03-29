@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Niconne&display=swap');
+
+:root {
+    --clr-text:#504a4a;
+    --clr-primary: #067E0A;
+    --clr-primary-dark: #044406;
+    --clr-accent: #593163;
+    --clr-accent-dark: #2f1136;
+
+    --ff-logo: 'Niconne', cursive;
+    --ff-title: 'New Tegomin', serif;
+    --ff-text: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    text-align: center;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+    color:var(--clr-text);
+    font-size: 1.15rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+section{
+    padding: 4em 1em;
+}
+
+/* Typography */
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: var(--ff-title);
+    line-height: 1.3;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    margin-bottom: 0.9em;
+}
+
+.section-title-small{
+    font-size:1.5rem;
+}
+.section-title-small small{
+    font-size: 0.7em;
+    line-height: 0.7;
+}
+
+.text-primary{
+    color:var(--clr-primary);
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 0.5em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigation*/
+
+header {
+    padding: 1em 0 2em;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-content: space-around;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.6em;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+
+/* buttons */
+
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 0.75em 2.5em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin:0.5em 0;
+    border-radius: 0.2em;
+}
+
+.btn + .btn {
+    margin-left: 0em;
+}
+
+.btn-primary{
+    background-color: var(--clr-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: var(--clr-primary-dark);
+}
+
+.btn-accent{
+    background-color: var(--clr-accent);
+    margin-bottom:1em;
+}
+
+.btn-accent:hover,
+.btn-accent:focus{
+    background-color: var(--clr-accent-dark);
+}
+
+/* Homepage styles */
+
+.hero {
+    background-color: #555;
+    background-image: url(../img/best-granola-recipe-1.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 15vh 1em;
+}
+
+.intro{
+    text-align: center;
+}
+
+.about-us{
+    background-color: var(--clr-accent);
+    display:flex;
+    flex-direction: column;
+    color:rgb(224, 220, 220);
+    padding:0;
+}
+
+.about-us__intro{
+    background-color: #4f2c58;
+    background-image: url(../img/granola1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode:multiply;
+    padding: 3em 1em 1.8em;
+}
+
+.about-us__body{
+    padding: 1.8em 1em 3em; 
+}
+
+.order-online{
+    background-color: rgb(236, 236, 236);
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.product{
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    margin: 0 0 1.5em;
+}
+
+.product:last-of-type{
+    margin-bottom: 4em;
+}
+.product__content{
+    padding:1em;
+}
+
+.product__title{
+    color:var(--clr-primary);
+    font-size: 2.3rem;
+    margin-bottom: 0.7em;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    margin-top:3em;
+}
+
+footer a{
+    color:inherit;
+}
+
+.footer-nav, .footer-social{
+    list-style: none;
+    
+}
+
+.footer-nav li{
+    margin-bottom: 0.3em;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    padding:.75em;
+   
+}
+
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+
+
+
+.social-icon{
+    margin-left:5px;
+    max-width: 50px;
+    }
+
+.social-icon2{
+    max-width: 60px;
+}
+
+@media only screen and (min-width:750px){
+    section{
+        padding: 6em 2em;
+    }
+
+    .btn-group{
+        flex-direction: row;
+        margin-top: 1em;
+    }
+
+    .btn + .btn {
+        margin: 0.5em;
+    }
+
+    .about-us{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-us__intro, .about-us__body{
+        flex:0 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4em 2em;
+    }
+    .about-us__intro{
+        text-align: right;
+    }
+
+    .about-us__intro > *{
+        max-width: 25rem;
+        margin-left: auto;
+    }
+
+    .about-us__body{
+        text-align: left;
+    }
+
+    .about-us__body > *{
+        max-width: 25rem;
+        margin-right: auto;
+    }
+
+    .order-online > *{
+        max-width: 60ch;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .products{
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: center;
+    }
+
+    .product{
+        flex: 0 1 33%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        min-height: 600px;
+    }
+
+    .product__title{
+        font-size: 1.7em;
+    }
+    
+    .product__content{
+        padding-bottom: 1em;
+        margin: 0;
+    }
+    .product:last-of-type{
+        margin-bottom: 0em;
+    }
+
+    .product + .product{ 
+        margin-left: 1em;
+    }
+
+
+
+    .product__img{
+        min-height:276px;
+        max-height: 15rem;
+        object-fit:cover;
+        width: max-content;
+    }
+
+    .btn-accent{
+        margin-top: 3em;
+    }
+}
